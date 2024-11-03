@@ -3,190 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prateek - Product Marketer & Creative</title>
-    <style>
-        :root {
-            --text-primary: #ffffff;
-            --text-secondary: #888888;
-            --background: #000000;
-            --accent: #2ecc71;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        }
-
-        body {
-            background-color: var(--background);
-            color: var(--text-primary);
-            line-height: 1.6;
-            padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 3rem;
-        }
-
-        .profile-img {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .header-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .header-text span {
-            color: var(--text-secondary);
-        }
-
-        .status-bar {
-            position: fixed;
-            top: 1rem;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(0, 0, 0, 0.8);
-            backdrop-filter: blur(10px);
-            padding: 0.5rem 1rem;
-            border-radius: 2rem;
-            display: flex;
-            gap: 1rem;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-
-        section {
-            margin-bottom: 3rem;
-        }
-
-        h2 {
-            color: var(--text-secondary);
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 1rem;
-        }
-
-        .currently {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 1rem;
-            border-radius: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .company {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-
-        .work-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .work-item:last-child {
-            border-bottom: none;
-        }
-
-        .arrow {
-            color: var(--text-secondary);
-        }
-
-        .version {
-            position: fixed;
-            bottom: 1rem;
-            right: 1rem;
-            color: var(--accent);
-            font-size: 0.8rem;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 1rem;
-            }
-            
-            .status-bar {
-                display: none;
-            }
-        }
-    </style>
+    <title>Tyler Farmer - Account Director</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="status-bar">
-        <span>⌘ + K</span>
-        <span>Aa</span>
-        <span>✶</span>
-        <span>14:41</span>
-        <span>6°C</span>
-        <span>15 / 110</span>
-    </div>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <svg class="w-8 h-8" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="#7C3AED"/>
+                        <path d="M10 14h20v12H10z" fill="white"/>
+                        <path d="M10 14l10 6 10-6" stroke="#7C3AED" stroke-width="2"/>
+                    </svg>
+                    <span class="ml-2 text-2xl font-bold text-purple-600">Tyler Farmer</span>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#experience" class="text-gray-700 hover:text-purple-600 font-semibold">Experience</a>
+                    <a href="#education" class="text-gray-700 hover:text-purple-600 font-semibold">Education</a>
+                    <a href="#publications" class="text-gray-700 hover:text-purple-600 font-semibold">Publications</a>
+                    <a href="mailto:tyler.farmer@hey.com" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <header class="header">
-        <img src="/api/placeholder/48/48" alt="Profile" class="profile-img">
-        <div class="header-text">
-            <h1>Hi, I am Tyler Farmer.</h1>
-            <span>I am a tech agency Account Director based in Halifax, Nova Scotia.</span>
+    <header class="bg-gradient-to-br from-purple-600 via-purple-500 to-pink-500 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+            <div class="flex items-center justify-between">
+                <div class="max-w-2xl">
+                    <h1 class="text-6xl font-bold mb-6">We finally fixed your digital presence!</h1>
+                    <p class="text-2xl mb-8">Account Director specialized in enterprise-level digital transformation initiatives and strategic client relationships.</p>
+                    <div class="flex space-x-4">
+                        <a href="#experience" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors">View Experience</a>
+                        <a href="mailto:tyler.farmer@hey.com" class="bg-purple-700 text-white px-8 py-4 rounded-lg font-bold hover:bg-purple-800 transition-colors">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <svg class="w-64 h-64" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="200" height="150" rx="16" fill="white"/>
+                        <path d="M0 16l100 60 100-60" stroke="#7C3AED" stroke-width="8"/>
+                    </svg>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section>
-        <h2>Currently</h2>
-        <div class="currently">
-            <div>
-                <div>Product Marketing & Comms</div>
-                <div class="company">2024 - Present</div>
+    <div class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-purple-600 mb-2">$2.5M+</div>
+                    <p class="text-gray-600">New Contracted Work Secured</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-purple-600 mb-2">600+</div>
+                    <p class="text-gray-600">Page AEM Website Build</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-purple-600 mb-2">10+</div>
+                    <p class="text-gray-600">Years Experience</p>
+                </div>
             </div>
-            <div>GetYourGuide<br>Berlin</div>
         </div>
-        <button style="background: none; border: none; color: var(--text-secondary); cursor: pointer; padding: 0.5rem 0;">← Previous roles</button>
-    </section>
+    </div>
 
-    <section>
-        <h2>About</h2>
-        <p>I do marketing. I also like making, leading, and taking things from 0 to 1. I have a deep passion for tasty tech and design. I am often learning and experimenting with AI, code, design, photo, and film. I value high agency, creativity, and big-picture thinking.</p>
-    </section>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <section id="experience" class="mb-16">
+            <h2 class="text-4xl font-bold mb-12 text-center">Experience that delivers results</h2>
+            
+            <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 transform transition-transform hover:scale-102">
+                <div class="flex items-start justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-purple-600">Account Director</h3>
+                        <p class="text-gray-600 mb-4">VERB Interactive | August 2023 to Present</p>
+                    </div>
+                    <svg class="w-12 h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4L45 24L24 44L3 24L24 4Z" fill="#7C3AED"/>
+                    </svg>
+                </div>
+                <ul class="list-disc list-inside space-y-3 text-gray-700">
+                    <li>Led strategic client relationships for major hospitality and tourism brands, including The Venetian Resort Las Vegas</li>
+                    <li>Spearheaded enterprise-level digital transformation initiatives</li>
+                    <li>Secured over $2.5 million in new contracted work through strategic account growth</li>
+                </ul>
+            </div>
 
-    <section>
-        <h2>Recent Work</h2>
-        <div class="work-item">
-            <span>Radio Globe</span>
-            <span class="arrow">→</span>
-        </div>
-        <div class="work-item">
-            <span>Time</span>
-            <span class="arrow">→</span>
-        </div>
-        <div class="work-item">
-            <span>Scoop</span>
-            <span class="arrow">→</span>
-        </div>
-        <div class="work-item">
-            <span>Mockmint</span>
-            <span class="arrow">→</span>
-        </div>
-        <div class="work-item">
-            <span>Peek AI</span>
-            <span class="arrow">→</span>
-        </div>
-    </section>
+            <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 transform transition-transform hover:scale-102">
+                <div class="flex items-start justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-purple-600">Manager, Special Projects & Marketing Strategy</h3>
+                        <p class="text-gray-600 mb-4">Information and Communications Technology Council (ICTC) | Jun 2021 to April 2023</p>
+                    </div>
+                    <svg class="w-12 h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="20" fill="#7C3AED"/>
+                    </svg>
+                </div>
+                <ul class="list-disc list-inside space-y-3 text-gray-700">
+                    <li>Crafted and implemented organization's public and government relations strategies</li>
+                    <li>Led website design and development of research and policy website</li>
+                    <li>Facilitated national virtual policy roundtables on innovation</li>
+                </ul>
+            </div>
+        </section>
 
-    <span class="version">v1.0</span>
+        <section id="education" class="mb-16">
+            <h2 class="text-4xl font-bold mb-12 text-center">Education & Certifications</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-purple-600 mb-4">Bachelor of Business Administration</h3>
+                    <p class="text-gray-600">Mount Saint Vincent University, Class of 2010</p>
+                    <p class="text-gray-700 mt-2">Major: Marketing | Minor: Information Technology</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-purple-600 mb-4">Professional Certifications</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Certified Complete Manager, 2023</li>
+                        <li>• Certified Strategist, 2022</li>
+                        <li>• Certified Brand Strategist, 2022</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="mb-16">
+            <h2 class="text-4xl font-bold mb-12 text-center">Featured Publications</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg p-8 transform transition-transform hover:scale-102">
+                    <h3 class="text-2xl font-bold text-purple-600 mb-4">Settling for More: Matching Newcomers to Alberta's Tech Sector</h3>
+                    <p class="text-gray-600 mb-4">Published by ICTC, Nov 2021</p>
+                    <a href="#" class="text-purple-600 font-semibold hover:text-purple-700">Read More →</a>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8 transform transition-transform hover:scale-102">
+                    <h3 class="text-2xl font-bold text-purple-600 mb-4">Bolstering Growth: The Next Frontier for Canadian Startups</h3>
+                    <p class="text-gray-600 mb-4">Published by ICTC, Oct 2020</p>
+                    <a href="#" class="text-purple-600 font-semibold hover:text-purple-700">Read More →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="bg-gradient-to-br from-purple-600 to-pink-500 text-white py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-8">Ready to collaborate?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Let's discuss how we can drive digital transformation and growth for your organization.</p>
+            <a href="mailto:tyler.farmer@hey.com" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 inline-block">Get in Touch</a>
+        </div>
+    </div>
+
+    <footer class="bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <svg class="w-8 h-8" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="#7C3AED"/>
+                        <path d="M10 14h20v12H10z" fill="white"/>
+                        <path d="M10 14l10 6 10-6" stroke="#7C3AED" stroke-width="2"/>
+                    </svg>
+                    <span class="ml-2 text-gray-600">© 2024 Tyler Farmer</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#experience" class="text-gray-600 hover:text-purple-600">Experience</a>
+                    <a href="#education" class="text-gray-600 hover:text-purple-600">Education</a>
+                    <a href="#publications" class="text-gray-600 hover:text-purple-600">Publications</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
