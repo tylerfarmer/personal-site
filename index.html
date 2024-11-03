@@ -3,99 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
+    <title>Prateek - Product Marketer & Creative</title>
     <style>
-        /* Modern, clean styling */
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
+        :root {
+            --text-primary: #ffffff;
+            --text-secondary: #888888;
+            --background: #000000;
+            --accent: #2ecc71;
+        }
+
+        * {
             margin: 0;
             padding: 0;
-            color: #333;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
 
-        header {
-            background-color: #f4f4f4;
+        body {
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
             padding: 2rem;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #333;
-            padding: 1rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            margin: 0 0.5rem;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 2rem;
         }
 
-        section {
-            margin-bottom: 2rem;
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
         }
 
         .profile-img {
-            width: 200px;
+            width: 48px;
+            height: 48px;
             border-radius: 50%;
-            margin: 1rem 0;
+            object-fit: cover;
         }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
+        .header-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-text span {
+            color: var(--text-secondary);
+        }
+
+        .status-bar {
             position: fixed;
-            bottom: 0;
-            width: 100%;
+            top: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            display: flex;
+            gap: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .currently {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .company {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .work-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .work-item:last-child {
+            border-bottom: none;
+        }
+
+        .arrow {
+            color: var(--text-secondary);
+        }
+
+        .version {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            color: var(--accent);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .status-bar {
+                display: none;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="/api/placeholder/200/200" alt="Your Profile Picture" class="profile-img">
-        <h1>Your Name</h1>
-        <p>Your Title or Tagline</p>
-    </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Write a brief introduction about yourself here. What do you do? What are you passionate about?</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Highlight your key projects or achievements here.</p>
-            <!-- Add your projects here -->
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>How can people reach you? Add your email, social media links, or a contact form.</p>
-        </section>
+    <div class="status-bar">
+        <span>⌘ + K</span>
+        <span>Aa</span>
+        <span>✶</span>
+        <span>14:41</span>
+        <span>6°C</span>
+        <span>15 / 110</span>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
+    <header class="header">
+        <img src="/api/placeholder/48/48" alt="Profile" class="profile-img">
+        <div class="header-text">
+            <h1>Hi, I am Tyler Farmer.</h1>
+            <span>I am a tech agency Account Director based in Halifax, Nova Scotia.</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Currently</h2>
+        <div class="currently">
+            <div>
+                <div>Product Marketing & Comms</div>
+                <div class="company">2024 - Present</div>
+            </div>
+            <div>GetYourGuide<br>Berlin</div>
+        </div>
+        <button style="background: none; border: none; color: var(--text-secondary); cursor: pointer; padding: 0.5rem 0;">← Previous roles</button>
+    </section>
+
+    <section>
+        <h2>About</h2>
+        <p>I do marketing. I also like making, leading, and taking things from 0 to 1. I have a deep passion for tasty tech and design. I am often learning and experimenting with AI, code, design, photo, and film. I value high agency, creativity, and big-picture thinking.</p>
+    </section>
+
+    <section>
+        <h2>Recent Work</h2>
+        <div class="work-item">
+            <span>Radio Globe</span>
+            <span class="arrow">→</span>
+        </div>
+        <div class="work-item">
+            <span>Time</span>
+            <span class="arrow">→</span>
+        </div>
+        <div class="work-item">
+            <span>Scoop</span>
+            <span class="arrow">→</span>
+        </div>
+        <div class="work-item">
+            <span>Mockmint</span>
+            <span class="arrow">→</span>
+        </div>
+        <div class="work-item">
+            <span>Peek AI</span>
+            <span class="arrow">→</span>
+        </div>
+    </section>
+
+    <span class="version">v1.0</span>
 </body>
 </html>
